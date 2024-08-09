@@ -1,6 +1,7 @@
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
 import { useParams } from "react-router";
 import { AppId, Token } from "./utils/constant";
+
 const RoomPage = () => {
   const { roomId } = useParams();
   const myMeeting = async (element) => {
