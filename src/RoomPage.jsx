@@ -1,10 +1,11 @@
 import { ZegoUIKitPrebuilt } from "@zegocloud/zego-uikit-prebuilt";
 import { useParams } from "react-router";
+import { AppId, Token } from "./utils/constant";
 const RoomPage = () => {
   const { roomId } = useParams();
   const myMeeting = async (element) => {
-    const appId = import.meta.env.VITE_ZEGOCLOUD_APP_ID;
-    const serverSecret = import.meta.env.VITE_ZEGOCLOUD_SERVER_SECRET;
+    const appId = 1137922331;
+    const serverSecret = "a0d2cbd80c846d38f5fa20a48722b4e4";
 
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
       appId,
